@@ -1,0 +1,17 @@
+[
+    {
+        "id": 2027,
+        "title": "H2027 Front End Development",
+        "details": "learn about Svelte and SvelteKit for dynamic website development"
+    },
+    {
+        "id": 2029,
+        "title": "COMP H2029 Database Fundamentals",
+        "details": "learn about H2029 Database Fundamentals"
+    },
+    {
+        "id": 2031,
+        "title": "COMP H2031 Object-Oriented Programming",
+        "details": "learn OO Java programming stuff"
+    }
+]
