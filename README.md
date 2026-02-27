@@ -70,9 +70,12 @@ So the full listing for `/routes/modules/[modulecode]/+page.svelte`  is now as f
 
 ```html
 <script>
-    export let params;
-    let moduleCode = parseInt(params.modulecode);
+    // export let params;  << $app/state is now the recommended method to access page parameters
+    import { page } from '$app/state';
+    let params = page.params;
     
+    let moduleCode = parseInt(params.modulecode);
+      
     // JSON array of module data
     const modules = [
         {
@@ -151,7 +154,10 @@ So we can simplify our Svelte page  `/routes/modules/[modulecode]/+page.svelte` 
 
 ```html
 <script>
-    export let params;
+    // export let params;  << $app/state is now the recommended method to access page parameters
+    import { page } from '$app/state';
+    let params = page.params;
+  
     let moduleCode = parseInt(params.modulecode);
 
     import modules from '$lib/data/modules.json';
