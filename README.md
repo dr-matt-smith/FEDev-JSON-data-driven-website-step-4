@@ -144,7 +144,7 @@ Create directory `/lib/data`, and create file `/lib/data/modules.json` containin
 
 In any Svelte script we can access this data with an `import` statement:
 ```javascript
-    import { modules } from '$lib/data/modules.json';
+    import modules from '$lib/data/modules.json';
 ```
 
 So we can simplify our Svelte page  `/routes/modules/[modulecode]/+page.svelte`  to the following:
